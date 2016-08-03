@@ -12,16 +12,16 @@
         </div>
         <div class="row text-center">
           {{#each model as |profile|}}
-          {{#each profile.hats as |hat|}}
+          {{#each profile.services as |service|}}
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-coffee fa-stack-1x fa-inverse" {{bind-attr class=hat.icon alt=hat.category}}></i>
+                    <i class="fa fa-stack-1x fa-inverse" {{bind-attr class=service.image alt=service.category}}></i>
                 </span>
                 <h4 class="service-heading">
-                    <strong>{{hat.category}}</strong>
+                    <strong>{{service.category}}</strong>
                 </h4>
-                <p class="text-muted">{{hat.description}}</p>
+                <p class="text-muted">{{service.description}}</p>
             </div>
             {{/each}}
           {{/each}}
