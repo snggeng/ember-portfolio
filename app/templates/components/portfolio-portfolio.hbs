@@ -16,11 +16,11 @@
                             <i class="fa fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                    <img src="img/portfolio/{{project.image.display}}" class="img-responsive" alt="{{project.title}}">
                 </a>
                 <div class="portfolio-caption">
                     <h4>{{project.title}}</h4>
-                    <p class="text-muted">Graphic Design</p>
+                    <p class="text-muted">{{project.description}}</p>
                 </div>
             </div>
             {{/each}}
