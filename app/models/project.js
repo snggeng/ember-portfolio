@@ -5,5 +5,6 @@ export default DS.Model.extend({
   description: DS.attr(),
   skills: DS.attr(),
   links: DS.attr(),
+  image: DS.attr(),
   projects: DS.belongsTo('profile', { async: true })
 })
