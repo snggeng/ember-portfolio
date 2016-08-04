@@ -23,7 +23,7 @@
                               <p class="text-muted">Where all the magic happens</p>
                               {{#each model as |profile|}}
                                 {{#each profile.skills.frontend as |frontend|}}
-                                <i class="{{frontend.icon}}" style="font-size:50px"></i>
+                                <i class="{{frontend.icon}}" style="font-size:7vw"></i>
                                 {{/each}}
                               {{/each}}
                             </div>
@@ -35,11 +35,16 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
+                                <h4>BACKEND</h4>
+                                <h4 class="subheading">Languages and Databases</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <p class="text-muted">Fluent in SQL and noSQL databases</p>
+                                {{#each model as |profile|}}
+                                  {{#each profile.skills.backend as |backend|}}
+                                  <i class="{{backend.icon}}" style="font-size:7vw"></i>
+                                  {{/each}}
+                                {{/each}}
                             </div>
                         </div>
                     </li>
@@ -49,33 +54,24 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>December 2012</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
+                                <h4>DEPLOYMENT</h4>
+                                <h4 class="subheading">Bringing Ideas Into Production</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <p class="text-muted">Test-driven Development</p>
+                                {{#each model as |profile|}}
+                                  {{#each profile.skills.deployment as |deployment|}}
+                                  <i class="{{deployment.icon}}" style="font-size:7vw"></i>
+                                  {{/each}}
+                                {{/each}}
                             </div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2014</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>Be Part
-                                <br>Of Our
-                                <br>Story!</h4>
+                            <a href="#contact">
+                              <i class="fa fa-lightbulb-o" style="color:white; font-size:5em"></i>
+                            </a>
                         </div>
                     </li>
                 </ul>
