@@ -8,5 +8,6 @@ export default DS.Model.extend({
   description: DS.attr(),
   services: DS.attr(),
   skills: DS.attr(),
+  education: DS.attr(),
   projects: DS.hasMany('projects', { async: true })
 })
