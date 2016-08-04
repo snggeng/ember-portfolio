@@ -11,9 +11,9 @@
             <div class="container-fluid text-center">
               <!-- I'm a comment  -->
                 <div class="team-member">
-                    <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+                    <img src="profile-small.jpg" class="img-responsive img-circle" alt="">
                     <h4>Geng Sng</h4>
-                    <p class="text-muted">Lead Designer</p>
+                    <p class="text-muted">Web Developer</p>
                     <ul class="list-inline social-buttons">
                         <li><a href="#"><i class="fa fa-twitter"></i></a>
                         </li>
@@ -64,18 +64,15 @@
                 </div>
                 <div class="row text-center">
                   {{#each model as |profile|}}
-                  {{#each profile.education as |education|}}
+
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <img src="img/{{education.image}}"/>
-                        </span>
-                        <h4 class="service-heading">
-                            <strong>{{education.name}}</strong>
+                            <img src="img/{{profile.education.image}}" class="img-responsive img-circle"/>
+                        <h4>
+                            <strong>{{profile.education.name}}</strong>
                         </h4>
-                        <p class="text-muted">{{education.description}}</p>
+                        <p class="text-muted">{{profile.education.description}}</p>
                     </div>
-                    {{/each}}
+
                   {{/each}}
                 </div>
             </div>
