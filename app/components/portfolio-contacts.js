@@ -4,10 +4,10 @@ import Ember from 'ember'
 export default Ember.Component.extend({
   didRender: function () {
     this._super(...arguments)
-    this.$().on('click', '#Layer_1', () => { message.reset().play(); console.log('works') })
+    this.$().on('click', '#Layer_7', () => { message.reset().play(); console.log('works') })
 
-    this.$().on('scroll', '#Layer_1', () => { message.reset().play() })
-    var message = new Vivus('Layer_1', {duration: 100})
+    this.$().on('scroll', '#Layer_7', () => { message.reset().play() })
+    var message = new Vivus('Layer_7', {duration: 100})
   },
   actions: {
     submit: function () {
