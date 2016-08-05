@@ -1,5 +1,5 @@
 {
-  "name": "Portfolio Website",
+  "name": "ember-portfolio-website",
   "version": "1.0.0",
   "description": "Built in Ember JS and consumes M-E-N backend API",
   "private": true,
