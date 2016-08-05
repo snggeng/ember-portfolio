@@ -1,7 +1,12 @@
-# Ember-sb-agency
+# Ember-Portfolio
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+My personal portfolio website built on the MEEN stack (MongoDB, Express,
+Ember.js and Node.js). Consumes an [API](https://github.com/snggeng/api-dot-me)
+of my resume.
+
+## License
+[MIT License](https://opensource.org/licenses/MIT)
+If you wish to use this project as reference, feel free to fork my repo.
 
 ## Prerequisites
 
@@ -11,11 +16,10 @@ You will need the following things properly installed on your computer.
 * [Node.js](http://nodejs.org/) (with NPM)
 * [Bower](http://bower.io/)
 * [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/snggeng/ember-portfolio` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -50,4 +54,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
