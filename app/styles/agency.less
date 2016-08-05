@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
         transition: padding 0.3s;
         border: none;
 	    .navbar-brand {
-	        font-size: 2em;
+	        font-size: 5em;
 	        -webkit-transition: all 0.3s;
 	        -moz-transition: all 0.3s;
 	        transition: all 0.3s;
@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
     	background-color: @gray-darkest;
         padding: 10px 0;
 		.navbar-brand {
-	        font-size: 1.5em;
+	        font-size: 3em;
 	    }
 	}
 }
@@ -167,6 +167,21 @@ header {
 	background-attachment: scroll;
 	background-position: center center;
 	.background-cover;
+	.dimmed {
+  	position: relative;
+	}
+
+	.dimmed:after {
+	  content: " ";
+	  z-index: 10;
+	  display: block;
+	  position: absolute;
+	  height: 100%;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  background: rgba(0, 0, 0, 0.5);
+	}
 	text-align: center;
 	color: white;
 	.intro-text {
@@ -375,7 +390,6 @@ section {
             color: white;
             border-radius: 100%;
             border: 7px solid #f1f1f1;
-						padding-top: 15px;
             text-align: center;
             h4 {
             	font-size: 10px;
