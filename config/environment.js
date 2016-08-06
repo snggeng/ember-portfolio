@@ -40,10 +40,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-  }
-
-  ENV.ghpages = {
-    gitRemoteUrl: 'https://github.com/snggeng/ember-portfolio'
+    ENV.ghpages = {
+      gitRemoteUrl: 'https://github.com/snggeng/ember-portfolio'
+    }
   }
 
   return ENV
