@@ -13,6 +13,7 @@ Router.map(function () {
       path: ':project_id'
     })
   })
+  this.route('resume')
 })
 
 export default Router
