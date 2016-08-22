@@ -14,6 +14,9 @@ export default Ember.Component.extend({
     }else {
       classie.remove(header, 'navbar-shrink')
     }
+    if (this.isDestroyed) {
+      return
+    }
     this.set('didScroll', false)
   },
 
@@ -29,6 +32,9 @@ export default Ember.Component.extend({
     /*jshint unused:false*/
     window.addEventListener('scroll', function (event) {
       if (!didScroll) {
+        if (this.isDestroyed) {
+          return
+        }
         this.set('didScroll', true)
         setTimeout(this.get('scrollPage').bind(this), 250)
       }
